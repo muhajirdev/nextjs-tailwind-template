@@ -1,4 +1,4 @@
-# NextJS TailwindCSS Template with PurgeCSS
+# NextJS TailwindCSS Typescript Template with PurgeCSS
 
 ## Getting Started
 
