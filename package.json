@@ -1,7 +1,7 @@
 {
-  "name": "website",
+  "name": "nextjs-tailwind-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "NextJS + TailwindCSS Template with PurgeCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,11 @@
     "start": "next start"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "email": "muhammad@muhajir.dev",
+    "name": "Muhammad Muhajir",
+    "url": "https://muhajir.dev"
+  },
   "license": "ISC",
   "dependencies": {
     "next": "^9.0.1",
