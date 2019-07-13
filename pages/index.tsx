@@ -2,9 +2,10 @@ import Layout from "../components/layout";
 
 const Home = () => (
   <Layout>
-    <h1 className="bg-black text-white h-screen flex justify-center items-center">
-      NextJS + TailwindCSS + Typescript = ❤️
-    </h1>
+    <div className="bg-black text-white h-screen flex flex-col justify-center items-center">
+      <h1 className="text-2xl">YukNgaji Jaksel</h1>
+      <h2>Coming Soon</h2>
+    </div>
   </Layout>
 );
 
