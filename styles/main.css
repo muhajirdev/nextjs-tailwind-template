@@ -1,3 +1,38 @@
 @tailwind base;
+
+:root {
+  --color-primary: #4f8cff;
+  --color-secondary: #fecc46;
+  --color-background: #222639;
+
+  --font-family: system-ui;
+}
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+html {
+  font-family: var(--font-family);
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
 @tailwind components;
+
+.btn {
+  @apply px-4 py-2 font-semibold rounded-lg;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+
+.btn-secondary {
+}
+
 @tailwind utilities;
