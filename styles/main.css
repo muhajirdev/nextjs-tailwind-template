@@ -2,16 +2,29 @@
 
 :root {
   --color-primary: #4f8cff;
-  --color-secondary: #fecc46;
-  --color-background: #222639;
+  --color-secondary: hsl(230, 25%, 25%);
 
-  --font-family: system-ui;
+  --font-display: system-ui;
+  --font-body: system-ui;
+}
+
+.light {
+  --color-text: #000;
+  --color-background: #fff;
+
+  @apply text-text;
+}
+
+.dark {
+  --color-text: #fff;
+  --color-background: hsl(230, 25%, 18%);
+
+  @apply text-text;
 }
 
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
-
-html {
-  font-family: var(--font-family);
+:--heading {
+  @apply font-display;
 }
 
 h1 {
@@ -25,14 +38,15 @@ h2 {
 @tailwind components;
 
 .btn {
-  @apply px-4 py-2 font-semibold rounded-lg;
+  @apply px-4 py-2 font-semibold rounded-lg font-body;
 }
 
 .btn-primary {
-  @apply bg-primary;
+  @apply bg-primary text-white;
 }
 
 .btn-secondary {
+  @apply bg-secondary text-white;
 }
 
 @tailwind utilities;
